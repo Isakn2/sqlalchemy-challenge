@@ -10,3 +10,9 @@ SurfsUp
      - The finally block is used when you want to ensure that certain actions (like closing a session) happen regardless of whether an exception is raised or not. Even if an error occurs within the try block, the finally block will execute, making it reliable for resource management.
      - session = Session(engine) is open and closed on each route.
      
+ ON app.py:
+ 	we use Dictionary Comprehension: The code {date: prcp for date, prcp in precipitation_data} creates a dictionary where:
+		Each 'date' from the query results is a key.
+		Each 'prcp' value (precipitation) is the corresponding value.
+
+
